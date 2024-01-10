@@ -1,5 +1,6 @@
 # Project Name
-> Outline a brief description of your project.
+> A CNN based model which can accurately detect melanoma. Melanoma is a type of skin cancer that can be deadly if not detected early & accounts for 75% of skin cancer deaths.
+> A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
 
 ## Table of Contents
@@ -11,38 +12,39 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- We build CNN architecture which can classify Cancerous Images.
+- We experiment starting with a simple model.
+- We then perform image transformation to improve upon the base model.
+- We identify and rectify class imbalance to make more robust
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- We experiment with multiple architecture setups in terms of convolution layer and Dropouts.
+- Base model without any image transformation shows overfitting (Training Accuracy - 78% and Validation Accuracy 55%).
+- We augment the training images with transformations and try to fit the base model on this. The models overcomes the overfitting problem but shows signs of underfitting.
+- We identify the Training Dataset is skewed/imbalance and Augment the training the dataset with synthetically generated images.
+- The model built on this Augmented Dataset performs well with no signs of overfitting/underfitting.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- CNN Architecture
+- Augmentor
+- Tensorflow
+- matplotlib
+- numpy
+- pandas
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- This project was in contribution to Melanoma Detection Assignment by Upgrad.
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@RavMan1991] - feel free to contact me!
 
 
 <!-- Optional -->
